@@ -1,0 +1,41 @@
+<!-- Extra code -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.fixed-action-btn').floatingActionButton();
+    $('.collapsible').collapsible();
+    $('.tooltipped').tooltip();
+    $('.parallax').parallax();
+    $('.modal').modal();
+  });
+
+function getChangelog(deviceCd) {
+    var deviceName = deviceCd
+    var runTheCL = jQuery.get('https://raw.githubusercontent.com/ExodusOS/exodus.github.io/live/changelog/' + deviceName + '.md', function(data) {
+      var clLines = [];
+      var clText = data.split(/\n/);
+      var finalSlice = 4;
+
+      for (var i = 3 ; i < clText.length ; i++) {
+        $('.cl-code-' + deviceCd).append('<p>' + clText[i] + '</p>')
+      }
+    }).fail(function(){
+      $('.cl-code-' + deviceCd).html('<p>Sorry, the changelog for this device couldn\'t be found.</p>');
+    });
+};
+
+function getChangelogBeta(deviceCd) {
+    var deviceName = deviceCd
+    var runTheCL = jQuery.get('https://raw.githubusercontent.com/ExodusOS/exodus.github.io/live/changelogbeta/' + deviceName + '.md', function(data) {
+      var clLines = [];
+      var clText = data.split(/\n/);
+      var finalSlice = 4;
+
+      for (var i = 3 ; i < clText.length ; i++) {
+        $('.cl-code-' + deviceCd).append('<p>' + clText[i] + '</p>')
+      }
+    }).fail(function(){
+      $('.cl-code-' + deviceCd).html('<p>Sorry, the changelog for this device couldn\'t be found.</p>');
+    });
+};
+</script>
