@@ -33,7 +33,7 @@ title: Downloads
             {% if device.xdathread %}
               <a class="waves-effect waves-light btn-small shishu-accent-btn" href="{{ device.xdathread }}"><i class="material-icons left">library_books</i>XDA Thread</a>
             {% endif %}
-            <a class="waves-effect waves-light btn-small shishu-accent-btn modal-trigger" href="#modal-chlgr-{{device.codename}}"><i class="material-icons left">receipt</i>Changelog ExodusOS</a>
+            <a class="waves-effect waves-light btn-small shishu-accent-btn modal-trigger" href="#modal-chlgr"><i class="material-icons left">receipt</i>Changelog ExodusOS</a>
             <a class="waves-effect waves-light btn-small shishu-accent-btn modal-trigger" href="#modal-chlg-{{device.codename}}"><i class="material-icons left">receipt</i>Changelog {{device.codename}}</a>
           </div>
         </li>
@@ -54,10 +54,10 @@ title: Downloads
            });
          });
         </script>
-		<div id="modal-chlgr-{{device.codename}}" class="modal modal-fixed-footer shishu-light-bg">
+		<div id="modal-chlgr" class="modal modal-fixed-footer shishu-light-bg">
           <div class="modal-content">
               <h4>Changelog for {{ device.codename }}</h4>
-              <div class="chlg-code cl-code-{{ device.codename }}"></div>
+              <div class="chlg-code"></div>
         </div>
           <div class="modal-footer shishu-light-bg">
             <a href="#!" class="modal-close waves-effect waves-light btn-flat">Close</a>
@@ -65,7 +65,7 @@ title: Downloads
         </div>
         <script>
         $(document).ready(function(){
-         $('#modal-chlgr-{{device.codename}}').modal(
+         $('#modal-chlgr').modal(
            {onOpenEnd: getChangelogROM()
            });
          });
