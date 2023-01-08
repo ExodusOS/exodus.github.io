@@ -67,7 +67,7 @@ title: Downloads
         <script>
         $(document).ready(function(){
          $('#modal-chlgr-{{device.codename}}').modal(
-           {onOpenEnd: getChangelogROM('{{device.codename}}')
+           {onOpenEnd: getChangelogROM('{{device.codename}}', '{{device.currentversion}}')
            });
          });
         </script>

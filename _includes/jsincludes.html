@@ -39,8 +39,9 @@ function getChangelogBeta(deviceCd) {
     });
 };
 
-function getChangelogROM(deviceCd) {
-    var runTheCL = jQuery.get('https://raw.githubusercontent.com/ExodusOS/exodus_vendor_RomOTA/squirrel/changelog_rom.md', function(data) {
+function getChangelogROM(deviceCd, branch) {
+    var deviceBranch = branch
+    var runTheCL = jQuery.get('https://raw.githubusercontent.com/ExodusOS/exodus_vendor_RomOTA/' + deviceBranch + '/changelog_rom.md', function(data) {
       var clLines = [];
       var clText = data.split(/\n/);
       var finalSlice = 4;
