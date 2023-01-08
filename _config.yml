@@ -66,3 +66,11 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Plugins
+# Use the following plug-ins
+plugins:
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem

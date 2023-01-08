@@ -1,5 +1,5 @@
 ---
-codename:onclite
+codename: onclite
 ---
 
 Device: 

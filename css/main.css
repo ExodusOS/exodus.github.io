@@ -124,3 +124,19 @@ nav .brand-logo > img {
 .chlg-code {
   font-family: monospace, monospace!important;
 }
+
+// Footer
+
+.footer {
+  p {
+    font-size: 14px !important;
+  }
+  b {
+    font-weight: 500;
+  }
+  svg {
+    fill: #757575;
+    margin-bottom: 4px;
+    height: 32px;
+  }
+}
