@@ -3,17 +3,15 @@
 		<div class="row">
 			<div class="col l6 s12">
 				<h5 class="white-text">{{ site.title }}</h5>
-				<p class="grey-text text-lighten-4"></> with ❤️ by melles1991 and Sensei Developer.<br />
+				<p class="grey-text text-lighten-4">&#60;&#47;&#62; with ❤️ by melles1991 and Sensei Developer.<br />
 				Donate: <a target="_blank" href="https://www.craft-rom.pp.ua/donate/">Donate - CraftRom</a> <br />
 				Note: ExodusOS LLC is not a 501(c)(3) non-profit, as such donations are not tax-exempt.
             </p>
 			</div>
 			<div class="col l4 offset-l2 s12">
-				<h5 class="white-text">Links</h5>
 				<div class="footer-icons">
 				{% include footer-icons.html %}<br><br>
-				<p class="text-md-right text-muted">
-				{% if page.last_updated %}Page last updated: {{page.last_updated}}<br/>{% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y" }}</p>
+				<p class="grey-text text-lighten-4">{% if page.last_updated %}Page last updated: {{page.last_updated}}<br/>{% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y" }}</p>
             </div>
 			</div>
 		</div>
