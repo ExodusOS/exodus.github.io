@@ -12,11 +12,11 @@ title: Downloads
   <div class="card-content">
     <span class="card-title">Releases</span>
     <ul class="collapsible shishu-lighter-bg collapsible-noborder">
-      {% for device in site.devices %}
+	{%- for device in site.devices %}
         <li>
           <div class="collapsible-header collapsible-noborder shishu-lighter-bg">
             <i class="material-icons">phone_android</i>
-          {{ device.codename }} | {{ device.fullname }}</div>
+          {{ device.codename }} | {{ device.fullname }} | {% assign version = device.currentversion %}{% include snippets/branch.html %}</div>
           <div class="collapsible-body collapsible-noborder shishu-midlight-bg">
             <span>Maintainer:</span><div class="chip shishu-lighter-bg" style="margin-left:4px">{{ device.maintainer }}</div><br>
             <span>Latest build:</span><div class="chip shishu-lighter-bg" style="margin-left:4px">{{ device.filename }}</div><br>
@@ -71,7 +71,7 @@ title: Downloads
            });
          });
         </script>
-      {% endfor %}
+		{% endfor %}
     </ul>
   </div>
 </div>

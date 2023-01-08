@@ -65,7 +65,13 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
+exclude:
+  - .idea/
+  - .gitignore
+  - Dockerfile
+  - Dockerfile.deploy
+  - CNAME
+  
 # Plugins
 # Use the following plug-ins
 plugins:
