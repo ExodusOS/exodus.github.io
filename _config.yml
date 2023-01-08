@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: ExodusOS
 currentyear: 2023
-email: craftrom.help@gmail.com
+
 description: >- # this means to ignore newlines until "baseurl:"
   This is the download center for all the Shishufied (official)
   builds for Bootleggers ROM, an AOSP Custom ROM with the goal of making you feel like 家.
@@ -26,8 +26,25 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+# Includes an icon in the footer for each username you enter
+footer-links:
+  email: craftrom.help@gmail.com
+  telegram: exodusos
+  github: ExodusOS
+  
 # Build settings
 markdown: kramdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
 theme: minima
 plugins:
   - jekyll-feed
