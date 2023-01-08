@@ -14,11 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: ExodusOS
-currentyear: 2023
+currentbranch: squirrel
 
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the download center for all the Shishufied (official)
-  builds for Bootleggers ROM, an AOSP Custom ROM with the goal of making you feel like 家.
+  This is the download center for all the builds for ExodusOS ROM.
   Including various features from other projects and some interesting
   system apps.
 baseurl: "" # the subpath of your site, e.g. /blog

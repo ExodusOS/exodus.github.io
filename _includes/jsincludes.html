@@ -39,17 +39,17 @@ function getChangelogBeta(deviceCd) {
     });
 };
 
-function getChangelogROM() {
+function getChangelogROM(deviceCd) {
     var runTheCL = jQuery.get('https://raw.githubusercontent.com/ExodusOS/exodus_vendor_RomOTA/squirrel/changelog_rom.md', function(data) {
       var clLines = [];
       var clText = data.split(/\n/);
       var finalSlice = 4;
 
       for (var i = 3 ; i < clText.length ; i++) {
-        $('.cl-code-').append('<p>' + clText[i] + '</p>')
+        $('.clr-code-' + deviceCd).append('<p>' + clText[i] + '</p>')
       }
     }).fail(function(){
-      $('.cl-code-').html('<p>Sorry, the changelog for this device couldn\'t be found.</p>');
+      $('.clr-code-' + deviceCd).html('<p>Sorry, the changelog for this device couldn\'t be found.</p>');
     });
 };
 </script>

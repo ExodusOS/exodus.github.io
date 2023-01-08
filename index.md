@@ -5,7 +5,7 @@ title: Downloads
 <div class="card shishu-light-bg z-depth-3">
   <div class="card-content">
     <span class="card-title">Welcome to our downloads</span>
-    <p>This is where all our officially supported devices are listed. If the device you're looking for isn't on the list, please check your build type (all the official releases are Shishufied) or ask your device maintainer to talk to us on our <a href="https://t.me/{{ site.footer-links.telegram }}">Telegram Chat.</a> </p>
+    <p>This is where all our officially supported devices are listed. If the device you're looking for isn't on the list, please check your build type (all the official releases are {{ site.currentbranch }}) or ask your device maintainer to talk to us on our <a href="https://t.me/{{ site.footer-links.telegram }}">Telegram Chat.</a> </p>
   </div>
 </div>
 <div class="card shishu-light-bg z-depth-3">
@@ -33,7 +33,7 @@ title: Downloads
             {% if device.xdathread %}
               <a class="waves-effect waves-light btn-small shishu-accent-btn" href="{{ device.xdathread }}"><i class="material-icons left">library_books</i>XDA Thread</a>
             {% endif %}
-            <a class="waves-effect waves-light btn-small shishu-accent-btn modal-trigger" href="#modal-chlgr"><i class="material-icons left">receipt</i>Changelog ExodusOS</a>
+            <a class="waves-effect waves-light btn-small shishu-accent-btn modal-trigger" href="#modal-chlgr-{{device.codename}}"><i class="material-icons left">receipt</i>Changelog ExodusOS</a>
             <a class="waves-effect waves-light btn-small shishu-accent-btn modal-trigger" href="#modal-chlg-{{device.codename}}"><i class="material-icons left">receipt</i>Changelog {{device.codename}}</a>
           </div>
         </li>
@@ -54,10 +54,11 @@ title: Downloads
            });
          });
         </script>
-		<div id="modal-chlgr" class="modal modal-fixed-footer shishu-light-bg">
+		
+		<div id="modal-chlgr-{{device.codename}}" class="modal modal-fixed-footer shishu-light-bg">
           <div class="modal-content">
               <h4>Changelog for {{ device.codename }}</h4>
-              <div class="chlg-code"></div>
+              <div class="chlg-code clr-code-{{ device.codename }}"></div>
         </div>
           <div class="modal-footer shishu-light-bg">
             <a href="#!" class="modal-close waves-effect waves-light btn-flat">Close</a>
@@ -65,8 +66,8 @@ title: Downloads
         </div>
         <script>
         $(document).ready(function(){
-         $('#modal-chlgr').modal(
-           {onOpenEnd: getChangelogROM()
+         $('#modal-chlgr-{{device.codename}}').modal(
+           {onOpenEnd: getChangelogROM('{{device.codename}}')
            });
          });
         </script>
