@@ -1,7 +1,7 @@
 ---
 codename: onclite
 fullname: Xiaomi Redmi 7
-maintainer: TEST
+maintainer: melles1991-&-Sensei-Developer
 currentversion: squirrel
 newformat: true
 buildsize: 938083015
