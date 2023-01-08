@@ -1,3 +1,15 @@
+.modal {
+    border-radius: 30px;
+}
+
+.modal .modal-footer {
+    padding: 4px 36px;
+}
+
+.modal-content {
+    background-color: #1c1c24 !important;
+}
+
 .shishu {
 	background-color:#121217!important;
 	color:#f3f3f3;
@@ -31,18 +43,15 @@
 	color:#e52c5f!important;
 }
 
-a {
-  color:#e52c5f!important;
-}
-
 .shishu-accent-btn {
-  color:#f3f3f3!important;
-  background-color:#e52c5f;
+  color: $grey-400;
+  background-color: $brand-primary-darker !important;
+  margin: 2px 0;
 }
 
 .shishu-accent-btn:hover {
-  color:#f3f3f3!important;
-  background-color:#ea567e;
+  color: $grey-400;;
+  background-color: $brand-primary-darker !important;
 }
 
 nav .brand-logo > img {
@@ -61,12 +70,33 @@ nav .brand-logo > img {
   border-radius: 0 0 10px 10px!important;
 }
 
+.card .card-title {
+  color: $brand-primary-darker !important;
+}
+
 .card-nopadding {
   padding: 0px!important;
 }
 
 .card {
   border-radius:10px;
+}
+.card-content li{
+  a {
+  color: #bdbdbd;
+  }
+}
+.card p {
+  a {
+      transition: .2s;
+      text-decoration: none;
+	  color: $brand-primary-darker !important;
+
+      &:hover {
+        opacity: 0.5;
+        color: $brand-primary !important;
+      }
+	}
 }
 
 .card .card-image img {
