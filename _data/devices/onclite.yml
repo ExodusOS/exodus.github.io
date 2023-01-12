@@ -3,7 +3,7 @@ codename: onclite
 current_branch: squirrel
 image: onclite.png
 filename: ExodusOS-12.1-20230102-onclite-squirrel.zip
-maintainers: [Sensei-Developer]
+maintainers: [melles1991, Sensei-Developer]
 name: Redmi 7
 vendor: Xiaomi
 vendor_short: xiaomi

@@ -253,8 +253,8 @@ tr.hidden {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  border-radius: 10px 10px 10px 10px!important;
-  background-color: #32383f!important;
+  border-radius: 24px !important;
+  background-color: #161b22 !important;
   box-shadow: 0 -2px 0 2px #24292f;
   padding: 16px;
   margin: 3px;
@@ -290,12 +290,41 @@ tr.hidden {
   flex: 1 0 0px;
 }
 .name {
-  height: 3.5em;
-  margin: 1em 1em 0em 0em;
+  margin: 1em 0em 0em 0em;
   flex: 1 0 0%;
   padding-right: 8px !important;
   padding-left: 8px !important;
+  color: #4EAFF5;
 }
+
+.maintainer {
+  flex: 1 0 0%;
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+  color: #8c959f;
+}
+
+.chip {
+    display: inline-block;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+    line-height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: #e4e4e4;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.file {
+  flex: 1 0 0%;
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+  color: #8c959f;
+}
+
 .item.discontinued {
   &:hover {
     img {
@@ -316,6 +345,15 @@ tr.hidden {
 .devicename {
   font-weight: 500;
 }
+
+.maintainername {
+  font-weight: 500;
+}
+
+ .filenamename {
+  font-weight: 500;
+}
+
 .codename {
   font-size: 14px;
 }

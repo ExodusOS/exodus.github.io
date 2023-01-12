@@ -98,11 +98,18 @@ Select a vendor to jump to:<br/>
     <a href="{{ url }}"><img src="{{ imagePath }}" alt="device-image for {{ device.codename }}" loading="lazy" /></a>
   </div>
   <div class="name">
-    <a href="{{ url }}">
-      <span class="devicename">{{ deviceName }}</span><br>
-      <span class="codename">{{ device.codename }}</span>
-    </a>
+      <span class="devicename">{{ deviceName }}</span> | <span class="codename">{{ device.codename }}</span>
   </div>
+  {%- if device.maintainers != empty %}
+  <div class="maintainer">
+      <span class="maintainername">Maintainer{% if device.maintainers.size > 1 %}s{% endif %}</span>: {%- for el in device.maintainers %}<span class="codename chip"> {{ el }}</span>{%- endfor %}
+  </div>
+  {% endif %}
+    {%- if device.filename != empty %}
+  <div class="file">
+      <span class="filenamename">Latest build</span>: <span class="codename chip">{{ device.filename }}</span>
+  </div>
+  {% endif %}
 </div>
 
 {%- if sorted[forloop.index].vendor != lastVendor %}
