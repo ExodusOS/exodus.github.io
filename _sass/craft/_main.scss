@@ -306,14 +306,13 @@ tr.hidden {
 
 .chip {
     display: inline-block;
-    height: 32px;
+    height: 28px;
     font-size: 13px;
-    font-weight: 500;
-    color: rgba(0,0,0,0.6);
-    line-height: 32px;
-    padding: 0 12px;
-    border-radius: 16px;
-    background-color: #e4e4e4;
+    color: #c9d1d9;
+    line-height: 28px;
+    padding: 0 8px;
+    border-radius: 24px;
+    background-color: rgba(177,186,196,0.15);
     margin-bottom: 5px;
     margin-right: 5px;
 }
@@ -348,10 +347,12 @@ tr.hidden {
 
 .maintainername {
   font-weight: 500;
+  font-size: 14px;
 }
 
  .filenamename {
   font-weight: 500;
+  font-size: 14px;
 }
 
 .codename {
