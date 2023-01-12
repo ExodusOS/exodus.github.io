@@ -4,6 +4,6 @@ current_branch: squirrel
 image: onclite.png
 filename: ExodusOS-12.1-20230102-onclite-squirrel.zip
 maintainers: [Sensei-Developer]
-name: Redmi Note 11
+name: Redmi 7
 vendor: Xiaomi
 vendor_short: xiaomi
