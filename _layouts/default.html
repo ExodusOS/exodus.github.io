@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body class="shishu">
-    {% include navbar.html %}
-    <body>
-	<section id="intro">
-      <div class="container intro-text">
-        <h2>Welcome to ExodusOS</h2>
-        <p>
-		Functionally Minimalistic! Exodus OS is a Custom OS based on Lineage OS with enhancements tweaks from and some features to enhance your daily driving experience.
-        </p>
-      </div>
-	</section>
-      <div class="container">
-        <div class="row">
-          {{ content }}
-        </div>
-      </div>
-    </body>
-	{% include layout/footer.html %}
-    {% include jsincludes.html %}
-  </body>
-</html>
+---
+---
+
+{% assign __ = site.data.languages[site.lang] %}
+{% include _default.html %}
