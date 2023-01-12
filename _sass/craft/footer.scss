@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .footer {
-  background-color: #1c1c24!important;
+  background-color: #eee;
   padding: 1rem 0;
   margin-top: 3rem;
 
@@ -24,7 +24,6 @@
         display: inline-block;
         height: 1em;
         width: 1.25em;
-		color: $brand-primary-darker !important
       }
     }
 
@@ -37,21 +36,9 @@
   }
 
   .footer-text {
-    color: $grey-400;
+    color: $grey-700;
     margin-bottom: .875rem;
     font-size: .875rem;
-	
-	a {
-      transition: .2s;
-      padding-right: 4px;
-      text-decoration: none;
-	  color: $brand-primary-darker !important;
-
-      &:hover {
-        opacity: 0.5;
-        color: $brand-primary !important;
-      }
-	}
   }
 
 }

@@ -20,10 +20,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is the download center for all the builds for ExodusOS ROM.
   Including various features from other projects and some interesting
   system apps.
+keywords: rom, android, craftrom, craft, mokee, redmi, xiaomi, poco, exodus, exodusos
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url:  https://exodus.craft-rom.pp.ua
 twitter_username: jekyllrb
 github_username:  jekyll
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: UA-71613593-4
 
 # Includes an icon in the footer for each username you enter
 footer-links:
