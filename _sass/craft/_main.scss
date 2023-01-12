@@ -253,6 +253,10 @@ tr.hidden {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  border-radius: 10px 10px 10px 10px!important;
+  background-color: #32383f!important;
+  box-shadow: 0 -2px 0 2px #24292f;
+  padding: 16px;
   &:hover,
   &:focus {
     cursor: pointer;
@@ -279,7 +283,6 @@ tr.hidden {
   min-height: 150px;
   text-align: center;
   justify-content: center;
-  background-color: #F6FAFA;
   transition: 0.15s;
   align-items: center;
   display: flex;
@@ -289,6 +292,8 @@ tr.hidden {
   height: 3.5em;
   margin: 1em 1em 0em 0em;
   flex: 1 0 0%;
+  padding-right: 8px !important;
+  padding-left: 8px !important;
 }
 .item.discontinued {
   &:hover {
