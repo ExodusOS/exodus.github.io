@@ -80,7 +80,6 @@ Select a vendor to jump to:<br/>
 {%- capture testValue %}{{ device.name | divided_by:1 }}{% endcapture %}
 {%- if testValue != "0" or device.vendor == "OnePlus" %}{% assign deviceName = device.vendor | append: ' ' | append: device.name %}
 {%- else %}{% assign deviceName = device.name %}{% endif %}
-{%- assign url = "devices/" | append: device.codename | relative_url %}
 {%- if device.current_branch != site.currentbranch %}
 {%- assign class="discontinued hidden" %}
 {%- else %}
@@ -93,9 +92,9 @@ Select a vendor to jump to:<br/>
 {%- capture imagePath %}{{ "https://raw.githubusercontent.com/LineageOS/lineage_wiki/" | append: jekyll.environment | append: "/images/devices/small/" | append: device.image }}{% endcapture %}
 {%- endif %}
 
-<div class="item {{ class }}" onClick="location.href='{{ url }}'">
+<div class="item {{ class }}">
   <div class="deviceimage">
-    <a href="{{ url }}"><img src="{{ imagePath }}" alt="device-image for {{ device.codename }}" loading="lazy" /></a>
+    <img src="{{ imagePath }}" alt="device-image for {{ device.codename }}" loading="lazy" />
   </div>
   <div class="name">
       <span class="devicename">{{ deviceName }}</span> | <span class="codename">{{ device.codename }}</span>
@@ -105,7 +104,12 @@ Select a vendor to jump to:<br/>
       <span class="maintainername">Maintainer{% if device.maintainers.size > 1 %}s{% endif %}:</span>{%- for el in device.maintainers %}<span class="chip">{{ el }}</span>{%- endfor %}
   </div>
   {% endif %}
-    {%- if device.filename != empty %}
+  {%- if device.buildsize != empty %}
+  <div class="sizefile">
+      <span class="sizenamename">Build size:</span><span class="chip">{{ device.buildsize | divided_by: 1048576 }}MB</span>
+  </div>
+  {% endif %}
+  {%- if device.filename != empty %}
   <div class="file">
       <span class="filenamename">Latest build:</span><span class="chip">{{ device.filename }}</span>
   </div>
