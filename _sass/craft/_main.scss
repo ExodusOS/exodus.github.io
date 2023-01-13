@@ -308,15 +308,16 @@ tr.hidden {
 
 .chip {
     display: inline-block;
-    height: 28px;
-    font-size: 13px;
+    font-size: 12px;
     color: #c9d1d9;
-    line-height: 28px;
-    padding: 0 8px;
-    border-radius: 24px;
+    line-height: 18px;
+    padding: 0 7px;
+	border: 1px solid #30363d;
+    border-radius: 2em;
     background-color: rgba(177,186,196,0.15);
     margin-bottom: 5px;
     margin-right: 5px;
+	white-space: nowrap;
 }
 
 .file {
@@ -327,6 +328,7 @@ tr.hidden {
 }
 
 .item.discontinued {
+  color: #8b949e;
   &:hover {
     img {
       opacity: 1;
@@ -340,7 +342,7 @@ tr.hidden {
     transition: 0.15s;
   }
   a {
-    color: $craft-light;
+    color: #8b949e;
   }
 }
 .devicename {
@@ -350,11 +352,13 @@ tr.hidden {
 .maintainername {
   font-weight: 500;
   font-size: 14px;
+  margin-right: 5px;
 }
 
- .filenamename {
+.filenamename {
   font-weight: 500;
   font-size: 14px;
+  margin-right: 5px;
 }
 
 .codename {
