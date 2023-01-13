@@ -23,6 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 keywords: rom, android, craftrom, craft, mokee, redmi, xiaomi, poco, exodus, exodusos
 baseurl: "" # the subpath of your site, e.g. /blog
 url:  https://exodus.craft-rom.pp.ua
+permalink: /:title/
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -47,8 +48,15 @@ kramdown:
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
     css_class: 'highlight'
+    
+highlighter: rouge
+# library used for syntax highlighting
 
-theme: minima
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :compressed # You might prefer to minify using :compressed
+  sourcemap: true
+
 plugins:
   - jekyll-feed
 
