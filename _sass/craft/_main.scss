@@ -281,6 +281,38 @@ tr.hidden {
 .item.hidden {
   display: none;
 }
+
+.itembtn {
+  color: #c9d1d9;
+  background-color: #21262d;
+  border-color: rgba(240,246,252,0.1);
+  box-shadow: 0 0 transparent, 0 0 transparent;
+  transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+  transition-property: color,background-color,box-shadow,border-color;
+  &:hover {
+    background-color: #30363d;
+    border-color: #8b949e;
+    transition-duration: .1s;
+	text-decoration: none;
+  }
+  &:active {
+    background-color: hsla(212,12%,18%,1);
+    border-color: #6e7681;
+    transition-duration: .1s;
+	text-decoration: none;
+  }
+}
+
+.btn-sm {
+  padding: 3px 12px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.itembtn .mdi:before {
+  color: #8b949e;
+  vertical-align: text-bottom;
+}
 .deviceimage {
   padding: 1rem;
   min-height: 150px;
