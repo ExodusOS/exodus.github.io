@@ -36,7 +36,7 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:    #007bff !default;
+$blue:    #4EAFF5 !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -74,7 +74,7 @@ $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
 //Carft Colors
-$craft-primary: #2196f3 !default;
+$craft-primary: #4EAFF5 !default;
 $craft-warning: #F4AC45 !default;
 $craft-danger:  #D0422D !default;
 $craft-success: #38853B !default;
