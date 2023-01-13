@@ -114,6 +114,9 @@ Select a vendor to jump to:<br/>
       <span class="filenamename">Latest build:</span><span class="chip">{{ device.filename }}</span>
   </div>
   {% endif %}
+  <a class="donut btn-donut pl-3 mb-3 mx-1 external" href="https://sourceforge.net/projects/exodusos/files/ExodusOS/{{ device.codename }}/{{ device.current_branch }}/{{ device.filename }}">
+      <span class="mdi mdi-download-network"></span><span class="mx-2">Download</span>
+  </a>
 </div>
 
 {%- if sorted[forloop.index].vendor != lastVendor %}
