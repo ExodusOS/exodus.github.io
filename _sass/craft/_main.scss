@@ -289,6 +289,7 @@ tr.hidden {
   font-family: Google Sans Regular;
   color: #c9d1d9;
   background-color: #238636;
+  border: 1px solid;
   border-color: rgba(240,246,252,0.1);
   box-shadow: 0 0 transparent, 0 0 transparent;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -298,8 +299,11 @@ tr.hidden {
     border-color: #8b949e;
     transition-duration: .1s;
     a {
-      color: $link-hover-color;
-	  text-decoration: none;
+	  &:hover,
+  	  &:focus {
+  	  	color: #c9d1d9;
+	    text-decoration: none;
+	  }
     }
   }
 }
@@ -309,10 +313,10 @@ tr.hidden {
 }
 
 .itembtn .mdi:before {
-  color: #8b949e;
+  color: #c9d1d9;
   &:hover,
   &:focus {
-    color: $link-hover-color;
+    color: #c9d1d9;
     text-decoration: none;
   }
 }
