@@ -228,8 +228,10 @@ a {
   column-count: 4;
   padding: .25rem 0 .25rem.5rem;
   font-size: 14px;
-  border: 1px solid #e8e8e8;
-  border-radius: 4px;
+  border: 1px solid #30363d;
+  border-radius: 24px;
+  background-color: #484f58 !important;
+  box-shadow: 0 -2px 0 2px #24292f;
 }
 
 .vendor-container div {
