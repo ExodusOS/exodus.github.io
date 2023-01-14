@@ -346,6 +346,12 @@ tr.hidden {
   color: #8c959f;
 }
 
+.version {
+  flex: 1 0 0%;
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+  color: #8c959f;
+}
 .chip {
     display: inline-block;
     font-size: 12px;
@@ -402,6 +408,12 @@ tr.hidden {
 }
 
 .maintainername {
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.versionname {
   font-weight: 500;
   font-size: 14px;
   margin-right: 5px;

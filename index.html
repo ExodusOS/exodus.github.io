@@ -99,6 +99,11 @@ Select a vendor to jump to:<br/>
   <div class="name">
       <span class="devicename">{{ deviceName }}</span> | <span class="codename">{{ device.codename }}</span>
   </div>
+  {%- if device.current_branch != empty %}
+  <div class="version">
+      <span class="versionname">Version:</span><span class="chip">{% assign version = device.current_branch %}{% include snippets/branch.html %}</span>
+  </div>
+  {% endif %}
   {%- if device.maintainers != empty %}
   <div class="maintainer">
       <span class="maintainername">Maintainer{% if device.maintainers.size > 1 %}s{% endif %}:</span>{%- for el in device.maintainers %}<span class="chip">{{ el }}</span>{%- endfor %}
